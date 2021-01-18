@@ -1,0 +1,7 @@
+pages
+public
+styles
+.gitignore
+.next
+node_modules
+.cache
