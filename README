@@ -1,7 +1,7 @@
 # EffectNode
 
-```js
-
+```jsx
+import { AutoWire } from 'effectnode'
 export function Demo () {
 	const wires = useMemo(() => {
 		return new AutoWire()
@@ -45,5 +45,4 @@ function Display ({ input }) {
 		{rand}
 	</div>
 }
-
 ```
