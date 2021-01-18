@@ -13,7 +13,7 @@ yarn add effectnode
 ```
 
 ## Demo
-[http://effectnode-npm-git-master.wonglok831.vercel.app/](http://effectnode-npm-git-master.wonglok831.vercel.app/)
+[https://effectnode-npm.vercel.app/](https://effectnode-npm.vercel.app/)
 
 ```jsx
 import { AutoWire } from 'effectnode'
