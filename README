@@ -1,6 +1,6 @@
 # EffectNode
 
-```javascript
+```js
 
 export function Demo () {
 	const wires = useMemo(() => {
