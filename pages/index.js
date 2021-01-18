@@ -31,15 +31,13 @@ function Demo () {
 
 	return <div className="flex w-full">
 		<div>
-			<Clicker output={wires.lok}></Clicker>
-			<Display input={wires.lok}></Display>
-			<Display input={wires.lok}></Display>
-			<Display input={wires.lok}></Display>
-			<Display input={wires.lok}></Display>
+			<Clicker output={wires.lok1}></Clicker>
+			<Display input={wires.lok1}></Display>
+			<Display input={wires.lok1}></Display>
+			<Display input={wires.lok1}></Display>
 		</div>
 		<div>
 			<Clicker output={wires.lok2}></Clicker>
-			<Display input={wires.lok2}></Display>
 			<Display input={wires.lok2}></Display>
 			<Display input={wires.lok2}></Display>
 			<Display input={wires.lok2}></Display>
@@ -47,11 +45,11 @@ function Demo () {
 	</div>
 }
 
-export default function Home() {
+export default function Home () {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Effect Node</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 			<div>
