@@ -1,14 +1,19 @@
 {
-	"name": "nextjs",
-	"version": "0.1.0",
-	"private": true,
+	"name": "effectnode",
+	"version": "1.4.0",
 	"main": "./lib/out/main.js",
+	"license": "MIT",
+	"files": [
+		"libout",
+		"libsrc"
+	],
 	"scripts": {
 		"devnext": "next dev",
 		"build": "next build",
 		"start": "next start",
 		"lib": "rollup --watch --config",
-		"dev": "run-p devnext lib"
+		"dev": "run-p devnext lib",
+		"deploy": "git add .; git commit -am \"git backup\"; git push"
 	},
 	"dependencies": {
 		"autoprefixer": "^10.2.1",
