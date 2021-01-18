@@ -1,5 +1,20 @@
 # EffectNode
 
+## Install Library
+
+If you use NPM
+```
+npm i effectnode --save
+```
+
+If you use Yarn
+```
+yarn add effectnode
+```
+
+## Demo
+[http://effectnode-npm-git-master.wonglok831.vercel.app/](http://effectnode-npm-git-master.wonglok831.vercel.app/)
+
 ```jsx
 import { AutoWire } from 'effectnode'
 export function Demo () {
