@@ -1,7 +1,10 @@
+// import { useEffect } from 'react'
 import '../styles/globals.css'
-
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+// import { Head } from 'next/head'
+function MyApp ({ Component, pageProps }) {
+  return (
+    <Component {...pageProps} />
+  )
 }
 
 export default MyApp

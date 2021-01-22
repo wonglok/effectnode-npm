@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { useEffect, useMemo, useState } from 'react'
 import { AutoWire } from '../libout/main.esm'
-import styles from '../styles/Home.module.css'
 
 function Clicker ({ output }) {
 	return <div className=" p-3" onClick={() => {
@@ -24,11 +23,7 @@ function Display ({ input }) {
 	</div>
 }
 
-function Demo () {
-	const wires = useMemo(() => {
-		return new AutoWire()
-	}, [])
-
+function Demo ({ wires }) {
 	return <div className="flex w-full">
 		<div>
 			<Clicker output={wires.lok1}></Clicker>
@@ -46,14 +41,16 @@ function Demo () {
 }
 
 export default function Home () {
+	const wires = useMemo(() => new AutoWire(), [])
+
   return (
-    <div className={styles.container}>
+    <div className={''}>
       <Head>
         <title>Effect Node</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 			<div>
-				<Demo></Demo>
+				<Demo wires={wires}></Demo>
 			</div>
     </div>
   )

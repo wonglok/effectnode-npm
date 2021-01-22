@@ -8,7 +8,7 @@
 		"libsrc"
 	],
 	"scripts": {
-		"devnext": "next dev",
+		"devnext": "next dev -p 4000",
 		"build": "next build",
 		"start": "next start",
 		"lib": "rollup --watch --config",
@@ -17,13 +17,23 @@
 	},
 	"dependencies": {
 		"autoprefixer": "^10.2.1",
+		"drei": "^2.2.17",
 		"next": "10.0.5",
+		"next-compose-plugins": "^2.2.1",
+		"next-transpile-modules": "^6.0.0",
 		"postcss": "^8.2.4",
 		"react": "17.0.1",
 		"react-dom": "17.0.1",
-		"tailwindcss": "^2.0.2"
+		"react-spring": "^8.0.27",
+		"react-three-fiber": "^5.3.14",
+		"react-use-gesture": "^9.0.0",
+		"react95": "^3.5.0",
+		"styled-components": "^5.2.1",
+		"tailwindcss": "^2.0.2",
+		"three": "^0.124.0"
 	},
 	"devDependencies": {
+		"file-loader": "^6.2.0",
 		"npm-run-all": "^4.1.5",
 		"rollup": "^2.36.2",
 		"run-s": "^0.0.0"
